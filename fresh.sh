@@ -62,6 +62,7 @@ pip3 install borgmatic
 
 ## install acme.sh with certificates dir set to /certs
 
+touch ~/.zshrc
 mkdir /certs
 git clone https://github.com/acmesh-official/acme.sh.git
 cd acme.sh
