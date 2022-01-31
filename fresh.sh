@@ -41,8 +41,8 @@ systemctl daemon-reload
 ## cleanup
 
 rm -rf /root/snap
-apt autoremove -y
 apt remove -y docker docker-engine docker.io containerd runc
+apt autoremove -y
 
 ## install caddy and docker
 
