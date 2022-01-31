@@ -36,6 +36,7 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docke
 
 apt update -y
 apt purge -y snapd
+systemctl daemon-reload
 
 ## cleanup
 
