@@ -61,9 +61,11 @@ pip3 install borgmatic
 
 ## install acme.sh with certificates dir set to /certs
 
-git clone https://github.com/acmesh-official/acme.sh.git
 mkdir /certs
-./acme.sh/acme.sh --install --cert-home /certs
+git clone https://github.com/acmesh-official/acme.sh.git
+cd acme.sh
+./acme.sh --install --cert-home /certs
+cd ~
 rm -rf ./acme.sh
 
 ## install pfetch
