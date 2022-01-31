@@ -15,7 +15,7 @@ unzip zip p7zip-full zsh \
 git curl gnupg wget aria2 \
 vim neovim tmux neofetch mosh socat \
 debian-keyring debian-archive-keyring \
-apt-transport-https ca-certificates lsb-release
+apt-transport-https ca-certificates lsb-release software-properties-common
 
 ## set up azlux, docker, ntfy, tailscale, caddy and plex repositories
 
