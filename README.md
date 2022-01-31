@@ -2,7 +2,7 @@
 
 script to set up a new ubuntu 20.04 vps
 
-```wget https://zer0.url.lol/fresh.sh && chmod +x fresh.sh && ./fresh.sh```
+```curl -L https://zer0.url.lol/fresh.sh | bash```
 
 ## does the following:
 
