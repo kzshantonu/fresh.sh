@@ -37,3 +37,4 @@ as per guidelines on https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04
 * autorestic
 * rclone
 * ohmyzsh
+* nnn

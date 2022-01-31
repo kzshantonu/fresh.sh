@@ -56,6 +56,7 @@ chmod +x /usr/local/bin/docker-compose
 ## install ntfy, pip, borgmatic
 
 apt install -y ntfy \
+nnn \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic
