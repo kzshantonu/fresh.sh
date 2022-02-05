@@ -3,6 +3,7 @@
 script to set up a new ubuntu 20.04 vps
 
 ```curl -L https://zer0.url.lol/fresh.sh | bash```
+
 ```curl -L https://zer0.url.lol/fresh_arm64.sh | bash``` # arm64
 
 ## does the following:
