@@ -22,6 +22,7 @@ as per guidelines on https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04
 * [ntfy](https://ntfy.sh/docs/install/#debianubuntu-repository)
 * [tailscale](https://tailscale.com/kb/1039/install-ubuntu-2004/)
 * [docker](https://docs.docker.com/engine/install/ubuntu/)
+* [speedtest](https://www.speedtest.net/apps/cli)
 
 ### installs:
 * caddy
@@ -38,3 +39,4 @@ as per guidelines on https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04
 * rclone
 * ohmyzsh
 * nnn
+* speedtest
