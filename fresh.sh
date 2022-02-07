@@ -11,7 +11,7 @@ apt full-upgrade -y
 ## install prerequisites
 
 apt install -y \
-unzip unrar zip p7zip-full zsh \
+unzip zip p7zip-full zsh \
 git curl gnupg wget aria2 \
 vim neovim tmux neofetch mosh socat \
 debian-keyring debian-archive-keyring \
