@@ -33,7 +33,6 @@ curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
 
 ## update and remove snap
 
-apt update -y
 apt purge -y snapd
 systemctl daemon-reload
 
