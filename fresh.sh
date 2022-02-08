@@ -31,10 +31,10 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | apt-key add -
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | tee /etc/apt/sources.list.d/tailscale.list
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
-curl -s https://install.speedtest.net/app/cli/install.deb.sh | bash
 
 ## update and remove snap
 
+apt update -y
 apt purge -y snapd
 systemctl daemon-reload
 
@@ -44,9 +44,9 @@ rm -rf /root/snap
 apt remove -y docker docker-engine docker.io containerd runc
 apt autoremove -y
 
-## install caddy, speedtest and docker
+## install caddy and docker
 
-apt install -y caddy speedtest docker-ce docker-ce-cli containerd.io
+apt install -y caddy docker-ce docker-ce-cli containerd.io
 
 ## install docker-compose
 
