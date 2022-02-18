@@ -2,9 +2,9 @@
 
 script to set up a new ubuntu 20.04 vps
 
-amd64 ```curl -L https://mni.li/fresh.sh | bash```
+```curl -L https://mni.li/fresh.sh | bash``` # amd64
 
-arm64 ```curl -L https://mni.li/fresh_arm64.sh | bash```
+```curl -L https://mni.li/fresh_arm64.sh | bash``` # arm64
 
 ## does the following:
 
