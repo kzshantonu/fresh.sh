@@ -2,9 +2,9 @@
 
 script to set up a new ubuntu 20.04 vps
 
-```curl -L https://mni.li/fresh.sh | bash```
+amd64 ```curl -L https://mni.li/fresh.sh | bash```
 
-```curl -L https://mni.li/fresh_arm64.sh | bash``` # arm64
+arm64 ```curl -L https://mni.li/fresh_arm64.sh | bash```
 
 ## does the following:
 
@@ -15,7 +15,7 @@ script to set up a new ubuntu 20.04 vps
 * removes un-needed dependencies
 
 ### hardens ssh:
-as per guidelines on https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_lts
+as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_lts) on sshaudit.com
 
 ### adds these repositories:
 * [azlux](https://packages.azlux.fr/)
