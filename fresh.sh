@@ -55,6 +55,12 @@ apt install -y caddy goaccess docker-ce docker-ce-cli containerd.io
 curl -L "https://github.com/docker/compose/releases/download/v2.2.3/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 
+## install CronitorCLI
+
+curl -sOL https://cronitor.io/dl/linux_amd64.tar.gz
+tar xvf linux_amd64.tar.gz -C /usr/bin/
+rm linux_amd64.tar.gz
+
 ## install ntfy, pip, borgmatic
 
 apt install -y ntfy \
