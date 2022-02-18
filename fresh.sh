@@ -17,7 +17,7 @@ vim neovim tmux neofetch mosh socat \
 debian-keyring debian-archive-keyring \
 apt-transport-https ca-certificates lsb-release software-properties-common
 
-## set up azlux, docker, ntfy, speedtest, tailscale, caddy and plex repositories
+## set up azlux, docker, ntfy, tailscale, caddy and plex repositories
 
 echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] https://packages.azlux.fr/debian/ bullseye main" | tee /etc/apt/sources.list.d/azlux.list
 wget -O /usr/share/keyrings/azlux-archive-keyring.gpg https://azlux.fr/repo.gpg
