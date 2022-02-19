@@ -33,6 +33,7 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
 wget -O - https://deb.goaccess.io/gnugpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/goaccess.gpg >/dev/null
 echo "deb [signed-by=/usr/share/keyrings/goaccess.gpg] https://deb.goaccess.io/ $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/goaccess.list
+add-apt-repository ppa:costamagnagianfranco/borgbackup
 
 ## update and remove snap
 
@@ -61,10 +62,10 @@ curl -sOL https://cronitor.io/dl/linux_amd64.tar.gz
 tar xvf linux_amd64.tar.gz -C /usr/bin/
 rm linux_amd64.tar.gz
 
-## install ntfy, pip, borgmatic
+## install ntfy, pip, borgbackup, borgmatic
 
 apt install -y ntfy \
-nnn \
+nnn borgbackup \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic

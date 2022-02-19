@@ -33,6 +33,7 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * ntfy
 * pip3
 * bpytop
+* borgbackup
 * borgmatic
 * acme.sh
 * pfetch

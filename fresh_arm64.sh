@@ -29,6 +29,7 @@ curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.gpg | apt-key add -
 curl -fsSL https://pkgs.tailscale.com/stable/ubuntu/focal.list | tee /etc/apt/sources.list.d/tailscale.list
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable" | tee /etc/apt/sources.list.d/docker.list > /dev/null
+add-apt-repository ppa:costamagnagianfranco/borgbackup
 
 ## update and remove snap
 
@@ -57,10 +58,10 @@ curl -sOL https://github.com/cronitorio/cronitor-cli/releases/download/28.8/linu
 tar xvf linux_arm64.tar.gz -C /usr/bin/
 rm linux_arm64.tar.gz
 
-## install ntfy, pip, borgmatic
+## install ntfy, pip, borgbackup, borgmatic
 
 apt install -y ntfy \
-nnn \
+nnn borgbackup \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic
