@@ -44,3 +44,4 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * nnn
 * goaccess `amd64 only`
 * CronitorCLI
+* ncdu

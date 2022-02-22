@@ -62,9 +62,9 @@ curl -sOL https://cronitor.io/dl/linux_amd64.tar.gz
 tar xvf linux_amd64.tar.gz -C /usr/bin/
 rm linux_amd64.tar.gz
 
-## install ntfy, pip, borgbackup, borgmatic
+## install ntfy, pip, borgbackup, borgmatic, ncdu
 
-apt install -y ntfy \
+apt install -y ntfy ncdu \
 nnn borgbackup \
 python3-pip
 pip3 install bpytop
