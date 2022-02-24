@@ -41,7 +41,6 @@ systemctl daemon-reload
 
 rm -rf /root/snap
 apt remove -y docker docker-engine docker.io containerd runc
-apt autoremove -y
 
 ## install caddy and docker
 
@@ -104,3 +103,4 @@ rm /etc/ssh/ssh_host_* && ssh-keygen -t rsa -b 4096 -f /etc/ssh/ssh_host_rsa_key
 ## install ohmyzsh
 
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+apt autoremove -y
