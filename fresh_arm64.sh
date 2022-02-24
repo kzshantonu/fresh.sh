@@ -40,7 +40,7 @@ systemctl daemon-reload
 ## cleanup
 
 rm -rf /root/snap
-apt remove -y docker docker-engine docker.io containerd runc
+apt remove -y docker docker-engine docker.io containerd runc cloud-init
 
 ## install caddy and docker
 
