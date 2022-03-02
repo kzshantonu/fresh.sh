@@ -57,10 +57,10 @@ curl -sOL https://github.com/cronitorio/cronitor-cli/releases/download/28.8/linu
 tar xvf linux_arm64.tar.gz -C /usr/bin/
 rm linux_arm64.tar.gz
 
-## install ntfy, pip, borgbackup, borgmatic, ncdu
+## install ntfy, pip, borgbackup, borgmatic, ncdu, duf
 
 apt install -y ntfy ncdu \
-nnn borgbackup \
+nnn duf borgbackup \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic
