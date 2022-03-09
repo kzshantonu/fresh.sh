@@ -57,22 +57,13 @@ curl -sOL https://github.com/cronitorio/cronitor-cli/releases/download/28.8/linu
 tar xvf linux_arm64.tar.gz -C /usr/bin/
 rm linux_arm64.tar.gz
 
-## install ntfy, pip, borgbackup, borgmatic, ncdu, duf
+## install ntfy, pip, borgbackup, borgmatic, ncdu, duf, vnstat
 
 apt install -y ntfy ncdu \
-nnn duf borgbackup \
+nnn duf vnstat borgbackup \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic
-
-## install acme.sh with certificates dir set to /certs
-
-mkdir /certs
-git clone https://github.com/acmesh-official/acme.sh.git
-cd acme.sh
-./acme.sh --install --cert-home /certs
-cd ~
-rm -rf ./acme.sh
 
 ## install pfetch
 

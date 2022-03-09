@@ -35,7 +35,6 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * bpytop
 * borgbackup
 * borgmatic
-* acme.sh
 * pfetch
 * topgrade
 * autorestic
@@ -46,3 +45,4 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * CronitorCLI
 * ncdu
 * duf
+* vnstat
