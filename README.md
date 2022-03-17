@@ -46,3 +46,4 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * ncdu
 * duf
 * vnstat
+* fio
