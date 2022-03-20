@@ -25,6 +25,7 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * [tailscale](https://tailscale.com/kb/1039/install-ubuntu-2004/)
 * [docker](https://docs.docker.com/engine/install/ubuntu/)
 * [goaccess](https://goaccess.io/download) `amd64 only`
+* [Volian Scar repo](https://deb.volian.org/volian)
 
 ### installs:
 * caddy
@@ -47,3 +48,4 @@ as per [guidelines](https://www.sshaudit.com/hardening_guides.html#ubuntu_20_04_
 * duf
 * vnstat
 * fio
+* nala

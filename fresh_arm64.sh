@@ -17,10 +17,12 @@ vim neovim tmux neofetch mosh socat \
 debian-keyring debian-archive-keyring \
 apt-transport-https ca-certificates lsb-release software-properties-common
 
-## set up azlux, docker, ntfy, tailscale and caddy repositories
+## set up azlux, docker, ntfy, tailscale, Volian Scar and caddy repositories
 
 echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] https://packages.azlux.fr/debian/ bullseye main" | tee /etc/apt/sources.list.d/azlux.list
 wget -O /usr/share/keyrings/azlux-archive-keyring.gpg https://azlux.fr/repo.gpg
+echo "deb [arch=amd64,arm64,armhf] https://deb.volian.org/volian/ scar main" | tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+wget -qO - https://deb.volian.org/volian/scar.key | tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg > /dev/null
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | tee /etc/apt/trusted.gpg.d/caddy-stable.asc
 curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | tee /etc/apt/sources.list.d/caddy-stable.list
 curl -sSL https://archive.heckel.io/apt/pubkey.txt | apt-key add -
@@ -57,10 +59,10 @@ curl -sOL https://github.com/cronitorio/cronitor-cli/releases/download/28.8/linu
 tar xvf linux_arm64.tar.gz -C /usr/bin/
 rm linux_arm64.tar.gz
 
-## install ntfy, pip, borgbackup, borgmatic, ncdu, duf, vnstat, fio
+## install ntfy, pip, borgbackup, borgmatic, ncdu, duf, vnstat, fio, nala
 
 apt install -y ntfy ncdu \
-nnn duf vnstat fio borgbackup \
+nnn duf vnstat fio nala borgbackup \
 python3-pip
 pip3 install bpytop
 pip3 install borgmatic
