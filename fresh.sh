@@ -43,7 +43,7 @@ kopia ncdu \
 nnn duf vnstat fio \
 python3-pip
 
-curl -L "https://github.com/docker/compose/releases/download/v2.12.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
 
