@@ -11,7 +11,7 @@ unzip zip p7zip-full zsh \
 git curl gnupg wget aria2 \
 vim neovim tmux neofetch mosh socat \
 debian-keyring debian-archive-keyring \
-apt-transport-https ca-certificates lsb-release software-properties-common
+apt-transport-https ca-certificates lsb-release software-properties-common ffmpeg
 
 apt remove -y docker docker-engine docker.io containerd runc
 
@@ -35,9 +35,14 @@ echo "deb [signed-by=/usr/share/keyrings/azlux-archive-keyring.gpg] https://pack
 
 wget -O /usr/share/keyrings/azlux-archive-keyring.gpg  https://azlux.fr/repo.gpg
 
+curl -fsSL https://archive.heckel.io/apt/pubkey.txt | gpg --dearmor -o /etc/apt/keyrings/archive.heckel.io.gpg
+
+sh -c "echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/archive.heckel.io.gpg] https://archive.heckel.io/apt debian main' \
+    > /etc/apt/sources.list.d/archive.heckel.io.list"
+
 apt update -y
 
-apt install -y caddy \
+apt install -y caddy ntfy \
 docker-ce docker-ce-cli containerd.io docker-compose-plugin \
 kopia ncdu \
 nnn duf vnstat fio \
@@ -74,6 +79,28 @@ rm topgrade-v9.0.1-x86_64-unknown-linux-gnu.tar.gz
 curl https://rclone.org/install.sh | bash
 
 curl https://getcroc.schollz.com | bash
+
+git clone https://github.com/acmesh-official/acme.sh.git
+
+chmod +x ./acme.sh/acme.sh
+
+cd acme.sh
+
+./acme.sh --install --cert-home /certs
+
+cd ..
+
+rm -rf ./acme.sh
+
+wget https://github.com/barthr/redo/releases/download/v0.5.0/redo_0.5.0_Linux_x86_64.tar.gz
+
+tar -xvf redo_0.5.0_Linux_x86_64.tar.gz
+
+chmod +x redo
+
+mv redo /usr/local/bin/
+
+rm README.md LICENSE redo_0.5.0_Linux_x86_64.tar.gz
 
 rm /etc/ssh/ssh_host_*
 
