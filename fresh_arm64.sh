@@ -8,7 +8,7 @@ apt upgrade -y
 
 apt install -y \
 unzip zip p7zip-full zsh \
-git curl gnupg wget aria2 \
+git curl gnupg wget \
 vim tmux socat debian-keyring \
 debian-archive-keyring apt-transport-https \
 ca-certificates lsb-release software-properties-common ffmpeg
