@@ -1,7 +1,7 @@
 #!/bin/bash
 export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-apt update -y
+apt update
 
 apt upgrade -y
 
@@ -9,9 +9,9 @@ apt upgrade -y
 apt install -y \
 unzip zip p7zip-full zsh \
 git curl gnupg wget aria2 \
-vim neovim tmux neofetch mosh socat \
-debian-keyring debian-archive-keyring \
-apt-transport-https ca-certificates lsb-release software-properties-common ffmpeg
+vim tmux socat debian-keyring \
+debian-archive-keyring apt-transport-https \
+ca-certificates lsb-release software-properties-common ffmpeg
 
 apt remove -y docker docker-engine docker.io containerd runc
 
@@ -42,13 +42,13 @@ sh -c "echo 'deb [arch=amd64 signed-by=/etc/apt/keyrings/archive.heckel.io.gpg] 
 
 apt update -y
 
-apt install -y caddy ntfy \
+apt install -y caddy btop ntfy \
 docker-ce docker-ce-cli containerd.io docker-compose-plugin \
 kopia ncdu \
 nnn duf vnstat fio \
 python3-pip
 
-curl -L "https://github.com/docker/compose/releases/download/v2.12.2/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/v2.13.0/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose
 
 chmod +x /usr/local/bin/docker-compose
 
@@ -57,8 +57,6 @@ wget https://github.com/wimpysworld/deb-get/releases/download/0.3.6/deb-get_0.3.
 dpkg -i deb-get_0.3.6-1_all.deb
 
 rm deb-get_0.3.6-1_all.deb
-
-pip3 install bpytop
 
 wget https://github.com/dylanaraps/pfetch/archive/refs/tags/0.6.0.zip
 
