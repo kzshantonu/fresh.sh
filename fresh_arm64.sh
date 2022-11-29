@@ -92,7 +92,7 @@ rm -rf ./acme.sh
 
 wget https://github.com/barthr/redo/releases/download/v0.5.0/redo_0.5.0_Linux_arm64.tar.gz
 
-tar -xvf https://github.com/barthr/redo/releases/download/v0.5.0/redo_0.5.0_Linux_arm64.tar.gz
+tar -xvf redo_0.5.0_Linux_arm64.tar.gz
 
 chmod +x redo
 
